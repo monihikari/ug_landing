@@ -20,6 +20,9 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
+  output: 'standalone',
+  useFileSystemPublicRoutes: true,
+
 }
 
 export default withMDX(nextConfig)
