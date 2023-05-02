@@ -1,5 +1,7 @@
 import { SparkleIcon } from '@/components/SparkleIcon'
 import { generateRssFeed } from '@/lib/generateRssFeed'
+import { FcAlarmClock, FcOnlineSupport, FcBookmark} from "react-icons/fc";
+
 
 export async function getStaticProps() {
   if (process.env.NODE_ENV === 'production') {
@@ -10,34 +12,40 @@ export async function getStaticProps() {
 
 ---
 
-![](@/images/commit-suggestions.png)
+![](@/images/meetup-mayo.png)
 
-## Commit message suggestions {{ date: '2023-04-06T00:00Z' }}
+## PANEL: FUERZAS FEMENINAS EN ACCIÓN {{ date: '2023-05-04T00:00Z' }}
 
-In the latest release, I've added support for commit message and description suggestions via an integration with OpenAI. Commit looks at all of your changes, and feeds that into the machine with a bit of prompt-tuning to get back a commit message that does a surprisingly good job at describing the intent of your changes.
+**"Fuerza femenina en acción"** es un evento único que celebra y reconoce el papel fundamental de las mujeres en Cloud.
 
-It's also been a pretty helpful way to remind myself what the hell I was working on at the end of the day yesterday when I get back to my computer and realize I didn't commit any of my work.
+Descubre cómo estas mujeres han superado obstáculos y desafíos en sus carreras y cómo han liderado proyectos innovadores y exitosos.
 
-### <SparkleIcon /> Improvements
+### <FcAlarmClock /> Horario y lugar
 
-- Added commit message and description suggestions powered by OpenAI
-- Fixed race condition that could sometimes leave you in a broken rebase state
-- Improved active project detection to try and ignore file changes triggered by the system instead of the user
-- Fixed bug that sometimes reported the wrong number of changed files
+- Horario: Jueves 4 de Mayo, 17:00 PM - 19:00 PM
+- Lugar: **Amazon México Headquarter** | 261, Polanco, Lomas de Chapultepec III Secc, Miguel Hidalgo
+
+### <FcOnlineSupport /> Panelistas
+- [Marlyn D. Castro](https://www.linkedin.com/in/marlyn-dayana-castro-gonzalez-b19a6912/) - Solutions Architect (AWS)
+- [Astrid Espinosa](https://www.linkedin.com/in/astridespinosapertalta/) - Solutions Architect Manager (AWS)
+- [Sofía Romero](https://www.linkedin.com/in/sofy-chan/) - Senior Solutions Architect (AWS)
+- [Angélica Ortega](https://www.linkedin.com/in/angelicaortegahdz/) - Solutions Architect Manager (AWS)
+
+### <FcBookmark /> [RESERVA TU LUGAR](https://bit.ly/embajadoras-cloud-aws)
 
 ---
 
-![](@/images/configuration-files.png)
+![](@/images/epicqueen.png)
 
-## Project configuration files {{ date: '2023-03-17T00:00Z' }}
+## Epic Queen Meetup {{ date: '2023-04-18T00:00Z' }}
 
-I've added support for creating per-project `.commitrc` files that override your global settings for that particular project. Went with YAML for these because personally I'm sick of quoting keys in JSON all the time, or accidentally leaving in a trailing comma.
+¡Nos unimos a Epic Queen Meetup! Un evento diseñado para preparar a las mujeres para los temas del futuro en tecnología, incluyendo I.A., Cloud, Web3 y más.
 
-### <SparkleIcon /> Improvements
+### <SparkleIcon /> Speakers
 
-- Added per-project `.commitrc` configuration files
-- Improved performance when working with projects with large binary files
-- Fixed a bug that could cause Commit to crash when autocommitting after deleting a recently active branch
+- Monica Canaza - Cloud para emprendedores
+- Anana - Crypto Artist NFT en la luna
+- Victoria Martin del Campo - Chimali  Lat
 
 ---
 
