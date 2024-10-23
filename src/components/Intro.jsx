@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { IconLink } from '@/components/IconLink'
 import { Logo } from '@/components/Logo'
 import { SignUpForm } from '@/components/SignUpForm'
-import { FaMeetup, FaLinkedinIn, FaFacebookF } from 'react-icons/fa';
+import { FaMeetup, FaLinkedinIn, FaFacebookF, FaInstagram } from 'react-icons/fa';
 import { Button } from '@/components/Button'
 
 
@@ -31,13 +31,13 @@ export function Intro() {
       <br/>
       </p>
       <div className="flex flex-wrap justify-center mt-5">
-        <Button type="submit" href="https://bit.ly/embajadoras-cloud-aws" className="hover:bg-orange-600" arrow>
-          Únete a la comunidad
+        <Button type="submit" href="https://www.meetup.com/es/embajadoras-cloud/" className="hover:bg-orange-600">
+        <FaMeetup className='inline'/>&nbsp;&nbsp;Únete a la comunidad 
         </Button>
       </div>
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        <IconLink href="https://www.meetup.com/es/embajadoras-cloud/" icon={FaMeetup} className="flex-none">
-          Meetup
+        <IconLink href="https://www.instagram.com/embajadorascloud/" icon={FaInstagram} className="flex-none">
+          Instagram
         </IconLink>
         <IconLink href="https://www.linkedin.com/company/comunidad-de-embajadoras-cloud/" icon={FaLinkedinIn} className="flex-none">
           Linkedin
